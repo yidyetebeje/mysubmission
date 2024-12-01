@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
     const { username, apiKey, secret } = await req.json();
     const contests = await ContestSubmission(username, apiKey, secret);
     return NextResponse.json(contests);
-  } catch (ex) {
+  } catch {
     return NextResponse.error();
   }
 }

@@ -1,9 +1,6 @@
 import crypto from "crypto";
 
 
-function generateSecret(): string {
-    return crypto.randomBytes(20).toString('hex');
-  }
 export async function ContestSubmission(username: string, apiKey:string, secret:string) : Promise<Response> {
   const from = 1;
   const count = 50000;
