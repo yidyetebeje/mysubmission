@@ -15,7 +15,7 @@ const FormPage = () => {
     const storedSecret = localStorage.getItem('codeforcesSecret');
 
     if (storedHandle && storedApiKey && storedSecret) {
-      router.push('/submission');
+      router.push('/submissions');
     }
   }, [router]);
 
