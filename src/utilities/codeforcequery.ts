@@ -1,7 +1,6 @@
 import crypto from "crypto";
 
-// export const apiKey = "44cfcb065b39a1d98756b6d4335dacfb1274be38";
-// export const secret = "0ce71e2af1be124c5f1c5d45a3ebef42dcc24a92";
+
 function generateSecret(): string {
     return crypto.randomBytes(20).toString('hex');
   }
