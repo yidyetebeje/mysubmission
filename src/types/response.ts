@@ -20,7 +20,7 @@ interface Author {
   startTimeSeconds: number;
 }
 
-interface Result {
+interface Submission {
   id: number;
   contestId: number;
   creationTimeSeconds: number;
@@ -37,5 +37,5 @@ interface Result {
 
 export interface Response {
   status: number;
-  result: Result[];
+  result: Submission[];
 }
