@@ -24,7 +24,7 @@ const FormPage = () => {
     localStorage.setItem('codeforcesHandle', handle);
     localStorage.setItem('codeforcesApiKey', apiKey);
     localStorage.setItem('codeforcesSecret', secret);
-    router.push('/submission');
+    router.push('/submissions');
   };
 
   return (
